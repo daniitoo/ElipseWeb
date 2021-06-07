@@ -108,10 +108,10 @@ html {
 }
 body {
   background-color: #040404;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .contenedor {
-  width: 85%;
+  width: 98%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
@@ -126,28 +126,36 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .contenedor {
-    width: 83%;
+    width: 98%;
     max-width: 1200px;
   }
 }
 .seccion {
   padding: 30px 0;
 }
-.seccion p {
-  font-size: 1.2em;
-  text-align: center;
+p {
+  text-align: left;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 1.5em;
 }
-h1{
+h1 {
   color: #ffffff;
-  font-size: 4.5em;
+  font-size: 2.5em;
   font-weight: 600;
   margin: 0;
 }
-
+@media only screen and (min-width: 992px) {
+  h1{
+    font-size: 4.4em;
+  }
+}
 h2 {
   font-size: 2.6em;
-  text-transform: uppercase;
   text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.3em;
+  font-weight: 600;
 }
 
 h3 {
@@ -155,13 +163,20 @@ h3 {
   margin: 0;
   line-height: 1.2em;
 }
+h4 {
+  margin: 0;
+}
 
-.button{
-  padding: .5em 1.5em;
+.button {
+  padding: 0.5em 1.5em;
   border: 2px solid #ffffff;
   color: #ffffff;
   text-decoration: none;
   box-sizing: border-box;
+}
+
+.seccion {
+  padding: 3em 0;
 }
 
 /* Header */
@@ -176,14 +191,14 @@ div.hero {
 div.barra {
   width: 90%;
   margin: 0 auto;
-  padding-top: 1.2em;
+  padding-top: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
   max-width: 1200px;
 }
-div.barra nav a{
+div.barra nav a {
   text-decoration: none;
   color: #ffffff;
   margin-right: 1.8em;
@@ -191,7 +206,72 @@ div.barra nav a{
   font-size: 1.1em;
 }
 
-div.informacion-elipse{
+div.logo {
+  float: left;
+}
+
+/* Menu mobil */
+/** Nav principal **/
+nav.navegacion-principal {
+  display: none;
+  width: 100%;
+}
+nav.navegacion-principal a {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.6s ease;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+@media only screen and (min-width: 992px) {
+  nav.navegacion-principal {
+    width: 67%;
+    float: right;
+    text-align: right;
+    display: block;
+  }
+  nav.navegacion-principal a {
+    padding: 10px 10px;
+    display: inline-block;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px 0 0;
+  }
+}
+div.menu-movil {
+  width: 60px;
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 12px;
+}
+
+div.menu-movil:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  div.menu-movil {
+    display: none;
+  }
+}
+
+div.menu-movil span {
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: white;
+  display: block;
+}
+
+div.informacion-elipse {
   height: 80vh;
   width: 80%;
   display: flex;
@@ -199,50 +279,55 @@ div.informacion-elipse{
   justify-content: center;
 }
 
-div.informacion-elipse .site-tittle{
+div.informacion-elipse .site-tittle {
   line-height: 1em;
 }
-div.informacion-elipse .slogan{
-  font-weight: 300;
+div.informacion-elipse .slogan {
+  font-weight: 200;
   font-size: 1.5em;
   letter-spacing: 1px;
   width: 80%;
   color: #ffffff;
 }
-div.home-button{
+div.home-button {
   margin-top: 3.3em;
 }
-div.home-button .button:first-child{
+div.home-button .button:first-child {
   margin-right: 1.5em;
 }
 
-
 /* Contenido Digital */
-section.contenido-digital{
-  display: flex;
-  align-items: center;
-  max-width: 1400px;
+div.container{
+  width: 80%;
   margin: 0 auto;
 }
-div.info-digital{
+section.contenido-digital {
+  max-width: 1400px;
+  margin: 0 auto 5em;
+}
+@media only screen and (min-width: 992px) {
+  section.contenido-digital {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+div.info-digital {
   color: #ffffff;
   width: 87%;
 }
-div.info-digital h2{
+div.info-digital h2 {
   text-align: left;
   margin: 0;
 }
-div.info-digital p{
-  text-align: left;
-  font-weight: 300;
-  letter-spacing: 1px;
-  font-size: 1.5em;
+div.info-digital p {
   width: 85%;
   display: inline-grid;
-  margin: .5em 0 0;
+  margin: 0.5em 0 0;
 }
-div.info-digital p span{
-  font-size: .5em;
+div.info-digital p span {
+  font-size: 0.5em;
 }
 
 /* Call to action */
@@ -256,29 +341,112 @@ div.info-digital p span{
   background-repeat: no-repeat;
   background-size: cover;
 }
-section.call-to-action{
+section.call-to-action {
   position: relative;
   height: auto;
   max-width: 1400px;
   margin: 0 auto;
 }
-section.call-to-action::before{
+section.call-to-action::before {
   background-image: url(../img/fondo-calltoaction.png);
-  content: '';
+  content: "";
 }
-section.call-to-action .contenido{
+section.call-to-action .contenido {
   position: relative;
   padding: 9em 0;
   text-align: center;
   color: #ffffff;
   width: 55%;
 }
-section.call-to-action .contenido a{
+section.call-to-action .contenido a {
   display: inline-block;
   margin-top: 1em;
 }
 
-/* ==========================================================================
+/* Servicios */
+div.servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+@media only screen and (min-width: 992px) {
+  div.servicios {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+div.web {
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  div.web {
+    height: 250px;
+    width: 265px;
+  }
+}
+div.web::before {
+  background-image: url(../img/web.png);
+  content: "";
+  opacity: 0.4;
+}
+div.web .text-servicios {
+  padding: 109px 0;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  font-size: 1.5em;
+}
+@media only screen and (min-width: 992px) {
+  div.web .text-servicios {
+    padding: 109px 0;
+  }
+}
+
+div.web .enlace {
+  padding: 85px 0;
+}
+
+
+div.web .enlace a {
+  font-size: 0.6em;
+  margin-top: 1em;
+  display: inline-block;
+}
+
+/* Agendar llamada */
+div.agendar-llamada {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 3em;
+}
+@media only screen and (min-width: 992px) {
+  div.agendar-llamada{
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.agendar-llamada {
+    width: 62%;
+    margin: unset;
+  }
+}
+div.agendar-llamada h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 3em;
+}
+@media only screen and (min-width: 992px) {
+  div.agendar-llamada h2 {
+    text-align: left;
+  }
+}
+div.agendar-llamada p {
+  margin: 0 0 2.2em;
+}
+
+  /* ==========================================================================
    Helper classes
    ========================================================================== */
 
