@@ -133,48 +133,98 @@ body {
 .seccion {
   padding: 30px 0;
 }
-p {
-  text-align: left;
-  font-weight: 200;
-  letter-spacing: 1px;
-  font-size: 1.5em;
-}
+
+
 h1 {
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 2.4em;
   font-weight: 600;
   margin: 0;
-}
-@media only screen and (min-width: 992px) {
-  h1{
-    font-size: 4.4em;
-  }
+  line-height: 1em;
 }
 h2 {
-  font-size: 2.6em;
+  font-size: 2.4em;
   text-align: center;
   color: #ffffff;
   margin-bottom: 1.3em;
   font-weight: 600;
 }
+@media only screen and (min-width: 481px) {
+  h1,h2 {
+    font-size: 2.8em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1, h2 {
+    font-size: 3em;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  h1 {
+    font-size: 4.4em;
+  }
+}
+@media only screen and (min-width: 1224px) {
+  h2 {
+    font-size: 3.6em;
+  }
+}
+
+/* @media only screen and (min-width: 481px) {
+  h2 {
+    font-size: 2em;
+  }
+} */
 
 h3 {
-  font-size: 3.5em;
+  font-size: 3em;
   margin: 0;
   line-height: 1.2em;
+  color: #ffffff;
 }
 h4 {
   margin: 0;
 }
 
+p {
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+@media only screen and (min-width: 481px) {
+  p {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 1.6em;
+    letter-spacing: 1px;
+  }
+}
+
+
 .button {
-  padding: 0.5em 1.5em;
+  padding: 0.6em 1.7em;
   border: 2px solid #ffffff;
   color: #ffffff;
   text-decoration: none;
   box-sizing: border-box;
+  font-weight: 600;
+  font-size: .7em;
 }
 
+@media only screen and (min-width: 768px) {
+  .button {
+    font-size: unset;
+  }
+}
 .seccion {
   padding: 3em 0;
 }
@@ -188,24 +238,32 @@ div.hero {
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+@media only screen and (min-width: 768px) {
+  div.hero {
+    margin-bottom: -10px;
+  }
+}
+/* @media only screen and (min-width: 992px) {
+  div.hero {
+    margin-bottom: -30px;
+  }
+} */
+@media only screen and (min-width: 1224px) {
+  div.hero {
+    margin-bottom: -150px;
+  }
+}
 div.barra {
   width: 90%;
   margin: 0 auto;
-  padding-top: 1.5em;
+  padding-top: 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
   max-width: 1200px;
 }
-div.barra nav a {
-  text-decoration: none;
-  color: #ffffff;
-  margin-right: 1.8em;
-  font-weight: 600;
-  font-size: 1.1em;
-}
-
 div.logo {
   float: left;
 }
@@ -217,11 +275,10 @@ nav.navegacion-principal {
   width: 100%;
 }
 nav.navegacion-principal a {
-  font-family: "Oswald", sans-serif;
-  color: #ffffff;
-  font-size: 1.3em;
-  text-transform: uppercase;
   text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.2em;
   transition: all 0.6s ease;
   width: 100%;
   display: block;
@@ -229,6 +286,7 @@ nav.navegacion-principal a {
   margin-bottom: 20px;
   clear: both;
 }
+
 
 @media only screen and (min-width: 992px) {
   nav.navegacion-principal {
@@ -241,13 +299,18 @@ nav.navegacion-principal a {
     padding: 10px 10px;
     display: inline-block;
     width: auto;
-    display: inline-block;
     text-align: center;
-    margin: 0 10px 0 0;
+    margin-right: -2px;
   }
 }
+@media only screen and (min-width: 1224px) {
+  nav.navegacion-principal a {
+    margin-right: 12px;
+  }
+}
+
 div.menu-movil {
-  width: 60px;
+  width: 30px;
   display: block;
   float: right;
   text-align: right;
@@ -265,57 +328,78 @@ div.menu-movil:hover {
 }
 
 div.menu-movil span {
-  height: 8px;
+  height: 3px;
   margin-bottom: 6px;
   background-color: white;
   display: block;
 }
 
 div.informacion-elipse {
-  height: 80vh;
-  width: 80%;
+  height: 81vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-div.informacion-elipse .site-tittle {
-  line-height: 1em;
+@media only screen and (min-width: 481px) {
+  div.informacion-elipse {
+    width: 90%;
+  }
 }
+@media only screen and (min-width: 768px) {
+  div.informacion-elipse {
+    height: 83vh;
+    width: 75%;
+  }
+}
+
 div.informacion-elipse .slogan {
-  font-weight: 200;
-  font-size: 1.5em;
-  letter-spacing: 1px;
   width: 80%;
-  color: #ffffff;
 }
-div.home-button {
-  margin-top: 3.3em;
-}
-div.home-button .button:first-child {
-  margin-right: 1.5em;
+
+
+div.home-button a:first-child {
+  margin-right: .2em;
+  display: inline-block;
+  margin-top: 2em;
 }
 
 /* Contenido Digital */
-div.container{
+
+div.container {
   width: 80%;
   margin: 0 auto;
 }
 section.contenido-digital {
   max-width: 1400px;
-  margin: 0 auto 5em;
+  margin-bottom: 2.5em;
+}
+@media only screen and (min-width: 768px) {
+  section.contenido-digital {
+    display: grid;
+    grid-template-columns: 41% 59%;
+    align-items: center;
+    margin-bottom: 2em;
+  }
 }
 @media only screen and (min-width: 992px) {
   section.contenido-digital {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+    margin-bottom: 0;
   }
+}
+
+section.contenido-digital img{
+  max-width: 100%;
 }
 
 div.info-digital {
   color: #ffffff;
-  width: 87%;
+}
+@media only screen and (min-width: 992px) {
+  div.info-digital {
+    width: 87%;
+  }
 }
 div.info-digital h2 {
   text-align: left;
@@ -324,7 +408,6 @@ div.info-digital h2 {
 div.info-digital p {
   width: 85%;
   display: inline-grid;
-  margin: 0.5em 0 0;
 }
 div.info-digital p span {
   font-size: 0.5em;
@@ -343,31 +426,53 @@ div.info-digital p span {
 }
 section.call-to-action {
   position: relative;
-  height: auto;
+  height: 525px;
   max-width: 1400px;
   margin: 0 auto;
 }
 section.call-to-action::before {
   background-image: url(../img/fondo-calltoaction.png);
   content: "";
+  height: 100%;
 }
 section.call-to-action .contenido {
   position: relative;
-  padding: 9em 0;
+  padding: 8em 0;
   text-align: center;
-  color: #ffffff;
-  width: 55%;
+}
+@media only screen and (min-width: 481px) {
+  section.call-to-action .contenido {
+    padding: 10.5em 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section.call-to-action .contenido {
+    padding:8.8em 0;
+    width: 55%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  section.call-to-action .contenido {
+    padding: 10.5em 0;
+    width: 55%;
+  }
 }
 section.call-to-action .contenido a {
   display: inline-block;
-  margin-top: 1em;
+  font-size: 1em;
+  margin-top: 1.8em;
 }
 
 /* Servicios */
 div.servicios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3em;
+  gap: .5em;
+}
+@media only screen and (min-width: 481px) {
+  div.servicios {
+    gap: 1em;
+  }
 }
 @media only screen and (min-width: 992px) {
   div.servicios {
@@ -377,13 +482,24 @@ div.servicios {
 }
 div.web {
   position: relative;
-  height: 250px;
+  height: 150px;
   width: 100%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 481px) {
+  div.web {
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.web {
+    height: 250px;
+  }
 }
 @media only screen and (min-width: 992px) {
   div.web {
-    height: 250px;
-    width: 265px;
+    height: 275px;
+    width: 275px;
   }
 }
 div.web::before {
@@ -392,61 +508,86 @@ div.web::before {
   opacity: 0.4;
 }
 div.web .text-servicios {
-  padding: 109px 0;
+  padding: 59px 0;
   color: #ffffff;
   text-align: center;
   position: relative;
   font-size: 1.5em;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 481px) {
+  div.web .text-servicios {
+    padding: 85px 0;
+  }
+}
+@media only screen and (min-width: 768px) {
   div.web .text-servicios {
     padding: 109px 0;
   }
 }
-
-div.web .enlace {
-  padding: 85px 0;
+@media only screen and (min-width: 992px) {
+  div.web .text-servicios {
+    padding: 121px 0;
+  }
 }
 
-
+div.web .enlace {
+  padding: 40px 0;
+}
+@media only screen and (min-width: 481px) {
+  div.web .enlace {
+    padding: 62px 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.web .enlace {
+    padding: 89px 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.web .enlace {
+    padding: 100px 0;
+  }
+}
 div.web .enlace a {
   font-size: 0.6em;
   margin-top: 1em;
   display: inline-block;
+  padding: .2em .5em;
 }
+
 
 /* Agendar llamada */
 div.agendar-llamada {
-  color: #ffffff;
-  text-align: center;
   margin-top: 3em;
-}
-@media only screen and (min-width: 992px) {
-  div.agendar-llamada{
-    text-align: left;
-  }
+  text-align: center;
 }
 @media only screen and (min-width: 992px) {
   div.agendar-llamada {
-    width: 62%;
+    width: 65%;
     margin: unset;
-  }
-}
-div.agendar-llamada h2 {
-  text-align: center;
-  margin: 0;
-  font-size: 3em;
-}
-@media only screen and (min-width: 992px) {
-  div.agendar-llamada h2 {
     text-align: left;
   }
 }
+div.agendar-llamada h2 {
+  margin-bottom: .5em;
+}
 div.agendar-llamada p {
-  margin: 0 0 2.2em;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  div.agendar-llamada h2,
+  div.agendar-llamada p  {
+    text-align: left;
+  }
 }
 
-  /* ==========================================================================
+div.agendar-llamada a {
+  display: inline-block;
+  font-size: 1em;
+  margin: 2em 0;
+}
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
