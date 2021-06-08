@@ -226,9 +226,13 @@ p {
   text-decoration: none;
   box-sizing: border-box;
   font-weight: 600;
+  font-size: .7em;
+}
+@media only screen and (min-width: 481px) {
+.button {
   font-size: 1em;
 }
-
+}
 @media only screen and (min-width: 768px) {
   .button {
     font-size: unset;
