@@ -267,6 +267,10 @@ div.barra {
 div.logo {
   float: left;
 }
+div.logo img{
+  width: 100%;
+  height: 100%;
+}
 
 /* Menu mobil */
 /** Nav principal **/
@@ -389,8 +393,10 @@ section.contenido-digital {
   }
 }
 
-section.contenido-digital img{
+img.img-digital{
   max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 div.info-digital {
@@ -586,7 +592,11 @@ div.agendar-llamada a {
   font-size: 1em;
   margin: 2em 0;
 }
-
+img.img-final{
+  max-width: 100%;
+  width: 78%;
+  height: 100%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
