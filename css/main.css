@@ -173,7 +173,15 @@ h2 {
 img{
   max-width: 100%;
   max-height: 100%;
+  width: 70%;
+  height: 100%;
 }
+@media only screen and (min-width: 768px) {
+  img{
+    width: 100%;
+  }
+}
+
 
 /* @media only screen and (min-width: 481px) {
   h2 {
@@ -424,10 +432,6 @@ section.contenido-digital {
   }
 }
 
-img.img-digital {
-  max-width: 100%;
-}
-
 div.info-digital {
   color: #ffffff;
   margin-bottom: 2.5em;
@@ -621,11 +625,7 @@ div.agendar-llamada a {
   display: inline-block;
   margin: 2em 0;
 }
-img.img-final {
-  max-width: 100%;
-  width: 78%;
-  height: 100%;
-}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
